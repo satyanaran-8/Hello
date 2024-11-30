@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Green Plant Shop</h2>
+    <nav>
+      <a href="product-listing.html">Products</a>
+      <span> | </span>
+      <a href="shopping-cart.html">Cart 🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+  
+  <section class="cart">
+    <h3>Your Shopping Cart</h3>
+    
+    <div id="cart-items">
+      <!-- Sample item; dynamically generated with JavaScript -->
+      <div class="cart-item">
+        <img src="http://www.pngall.com/wp-content/uploads/2016/07/Plants-Free-Download-PNG.png" alt="Plant 1" class="cart-thumbnail">
+        <p>Name: Plant 1</p>
+        <p>Unit Price: $10</p>
+        <button onclick="decreaseQuantity(this)">-</button>
+        <span class="quantity">1</span>
+        <button onclick="increaseQuantity(this)">+</button>
+        <button onclick="removeItem(this)">Delete</button>
+      </div>
+      <!-- More items will be added here -->
+    </div>
+
+    <p>Total Number of Plants: <span id="total-items">1</span></p>
+    <p>Total Cost: $<span id="total-cost">10</span></p>
+
+    <button class="checkout-btn">Checkout - Coming Soon</button>
+    <button onclick="window.location.href='product-listing.html'">Continue Shopping</button>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>

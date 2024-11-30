@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>Green Plant Shop</h2>
+    <nav>
+      <a href="product-listing.html">Products</a>
+      <span> | </span>
+      <a href="shopping-cart.html">Cart 🛒 <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+  
+  <section class="product-list">
+    <!-- Group 1 -->
+    <div class="product-category">
+      <h3>Indoor Plants</h3>
+      <div class="product">
+        <img src="http://www.pngall.com/wp-content/uploads/2016/07/Plants-Free-Download-PNG.png" alt="Plant 1">
+        <p>Name: Plant 1</p>
+        <p>Price: $10</p>
+        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://www.freeiconspng.com/uploads/beautiful-transparent-plants-png-6.png" alt="Plant 2">
+        <p>Name: Plant 2</p>
+        <p>Price: $12</p>
+        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+    
+    <!-- Group 2 -->
+    <div class="product-category">
+      <h3>Outdoor Plants</h3>
+      <div class="product">
+        <img src="https://webstockreview.net/images/house-plant-png-13.png" alt="Plant 3">
+        <p>Name: Plant 3</p>
+        <p>Price: $15</p>
+        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://www.freeiconspng.com/uploads/beautiful-transparent-plants-pictures-31.png" alt="Plant 4">
+        <p>Name: Plant 4</p>
+        <p>Price: $18</p>
+        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+    
+    <!-- Group 3 -->
+    <div class="product-category">
+      <h3>Flowering Plants</h3>
+      <div class="product">
+        <img src="https://pluspng.com/img-png/plant-png-hd-marine-plant-acquarium-800.png" alt="Plant 5">
+        <p>Name: Plant 5</p>
+        <p>Price: $20</p>
+        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="http://clipart-library.com/new_gallery/20-206866_added-by-yorik-on-tropical-plants-png.png" alt="Plant 6">
+        <p>Name: Plant 6</p>
+        <p>Price: $25</p>
+        <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>

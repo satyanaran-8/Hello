@@ -1,0 +1,76 @@
+/* Landing Page Styling */
+.container {
+    background-image: url('https://images.pexels.com/photos/1089455/pexels-photo-1089455.jpeg?cs=srgb&dl=green-plants-1089455.jpg&fm=jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .get-started-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .product-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .product-category {
+    margin-bottom: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .add-to-cart {
+    padding: 5px 10px;
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .cart {
+    padding: 20px;
+  }
